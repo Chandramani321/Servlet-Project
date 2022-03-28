@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SignUp&amp;Login</display-name>
+ <!--  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+   
+  </welcome-file-list>
+   -->
+  <welcome-file-list>
+  	<welcome-file>SignUpDesign.html</welcome-file>
+  	<welcome-file>LoginDesign.html</welcome-file>
+  	 <welcome-file>forgetPassDesign.html</welcome-file>
+  	 <welcome-file>webPage.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>SignUp</servlet-name>
+  	<servlet-class>SignUp</servlet-class>
+  	<init-param>
+ 			<param-name>user</param-name>
+ 			<param-value>sa</param-value>
+ 		</init-param>
+  	</servlet>
+  <servlet>
+  <servlet-name>LoginData</servlet-name>
+  <servlet-class>LoginData</servlet-class>
+  	<!-- Log In for using username and password -->
+  <init-param>
+ 			<param-name>user</param-name>
+ 			<param-value>sa</param-value>
+ 		</init-param>
+ 		
+ </servlet>
+ <servlet>
+ 	<servlet-name>Succefull</servlet-name>
+ 	<servlet-class>Succefull</servlet-class>
+ 	
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>Succefull</servlet-name>
+ 	<url-pattern>/Succefull</url-pattern>
+ </servlet-mapping>
+ <context-param>
+ 	<param-name>password</param-name>
+ 	<param-value>sql321</param-value>
+ </context-param>
+  <servlet-mapping>
+  	<servlet-name>SignUp</servlet-name>
+  	<url-pattern>/SignUp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>SendEmail</servlet-name>
+  <servlet-class>SendEmail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SendEmail</servlet-name>
+  	<url-pattern>/SendEmail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>LoginData</servlet-name>
+  <url-pattern>/LoginData</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

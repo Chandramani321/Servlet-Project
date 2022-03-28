@@ -1,0 +1,59 @@
+//Retrive Data from UserName for Login Times
+
+public int RetriveUser() {
+		String name = "";
+		ResultSet rs = null;
+		int flag = 0;
+		c = dbConnection(user, conPass);
+
+		try {
+			String query = "select * from studentInfo where Name=?";
+			PreparedStatement pst = c.prepareStatement(query);
+			pst.setString(1, name);
+			rs = pst.executeQuery();
+			if (rs.next()) {
+				flag = 1;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return flag;
+	}
+	<a href="LogoutDesign.html"><i class="bi-person-circle" role="img" aria-label="GitHub"></i></a>
+	<a href="LogoutDesign.html"><i class="bi-person-circle" role="img" aria-label="GitHub"></i></a>
+	 ul li a:hover{
+        color: #fff;
+       /* background: #939393;
+    }
+    ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+        text-decoration: none;
+    }
+     ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }

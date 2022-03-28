@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link href="style.css" rel="stylesheet">
+<script>
+	//var username=document.getElementById("setWidth").value;
+	//if(username)
+	function myFunction(){
+		var empt = document.getElementById("checkvalidate1").value;
+		var pass = document.getElementById("checkvalidate1").value;
+		
+		if(empt==""){
+				
+				document.getElementById('display').innerHTML="UserName Empty";
+			}
+		 
+	}
+	
+</script>
+</head>
+<body>
+<div class="container">
+	<form method="post" action="FirstProgram" name="form1"> 
+		<div class="card" >
+            <label class="nameofPage">Login Form</label>
+            <div class="form-group">
+                    <label>Enter the UserName:</label>
+                    <input type="text" name="userName" class="form-control" id="checkvalidate1">
+
+                    <label>Enter the Password:</label>
+                    <input type="password" name="Password" class="form-control" id="checkvalidate">
+            </div>
+            <input type="submit" value="Login" id="loginbutton" name="login" class="btn btn-primary" onclick="myFunction()">
+            <div id="display"></div>
+        </div>
+	</form>
+</div>
+</body>
+</html>

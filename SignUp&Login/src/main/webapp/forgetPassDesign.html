@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	.card{
+		height:auto;
+		width:40%;
+		box-shadow:0 4px 8px 0;
+		transition:0.3s;
+		
+		margin-left:30%;
+		padding:10px;
+		border-radius:9px;
+	}
+	input[type=submit]{
+	font-size:17px;
+	border-radius:5px;
+	background-color:blue;
+	padding:6px;
+	margin-bottom: 10px;
+	
+}
+input[type=email]{
+	height:15px;
+	width:40%;
+	padding:5px;
+	font-size:16px;
+	border-color:rgba(0,20,100,30);
+	
+}
+input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type=email] {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 20 22px 0;
+  display: inline-block;
+  border:none;
+  background: #f1f1f1;
+}
+label{
+	font-size:20px;
+	padding:5px;
+	color:gray;
+	
+	
+}
+.form-groupsubmit{
+	padding:10px;
+}
+.container{
+	text-align:center;
+}
+</style>
+
+</head>
+<body>
+	<div class="card">
+	<form action="SendEmail" method="get">
+		<div class="container">
+		
+			<div class="form-group">
+				<label>Enter EmailId:
+					<input type="email" name="forgetemail" placeholder="Enter Email" >
+				</label>
+			</div>
+				<div class="form-groupsubmit">
+					<input type="submit" name="fsubmit" name="submitemail">
+				</div>
+		</div>
+	</form>
+	</div>
+</body>
+</html>

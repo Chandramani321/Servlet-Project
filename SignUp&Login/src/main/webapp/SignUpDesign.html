@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	.card{
+		box-shadow:0 4px 8px 0;
+		transition:0.3s;
+		width:40%;
+		margin-left:30%;
+		height:auto;
+		border-radius:9px;
+	}
+	.container{
+	padding: 8px 16px;
+	}
+	label{
+		font-size:17px;
+	}
+	.form-group{
+		padding:5px;
+	}
+	
+	form{
+		text-align:center;
+	}
+	input[type=text], input[type=password] {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border:none;
+  background: #f1f1f1;
+}
+	input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type=submit]{
+	font-size:17px;
+	border-radius:5px;
+	background-color:blue;
+	
+	margin-left:5%;
+	margin-top:2%;
+}
+.group1{
+	margin-right:20%;
+	
+}
+#radio1{
+	padding:10px;
+}
+
+	/*#loginData{
+	margin-right:30%;
+	margin-top:-25%;
+	}*/
+	.loginButton{
+		
+		 margin-left:25%;
+		 font-size:17px;
+	     border-radius:5px;
+		 margin-top:-6%;
+		 
+	}
+</style>
+</head>
+<body>
+	<div class="card">
+		<div class="container">
+			<form action="SignUp" method="post">
+				<div class="form-group">
+					<label>Full Name:</label>
+					<input type="text" name="f_name">
+					
+				</div>
+				<div class="form-group">
+					<label>Email:</label>
+					<input type="text" style="margin-left:5%;" name="e_mail">
+					
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" style="margin-left:2.5%" name="pass">
+					
+				</div>
+				<div class="form-group">
+					<label>Retype Password</label>
+					<input type="password" name="retypePass">
+					
+				</div>
+				<div class="group1" id="radio1">
+					<label>Gender:</label>
+						<label>Male:</label>
+							<input type="radio" name="A"  value="M">
+						
+						<label>Female:</label>
+							<input type="radio" name="A" value="F">
+						
+						<label>Other:
+							<input type="radio" name="A" value="O">
+						</label>
+				</div>
+				
+					
+					
+					
+					<input type="submit" value="Sign Up" name="ok">
+					
+					
+			</form>		
+				<div class="loginButton">		
+					<a href="LoginDesign.html"><input type="submit" value="Login"></a>
+				</div>
+		</div>
+	</div>	
+</body>
+</html>
