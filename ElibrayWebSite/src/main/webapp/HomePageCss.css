@@ -1,0 +1,59 @@
+@charset "ISO-8859-1";
+*{
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+body{
+	
+	background-image:linear-gradient(to bottom,#aeb6bf,#eeed80);
+	background-attachment: fixed;
+	font-family:sans-serif;
+}
+section{
+	width:80vw;
+	margin:5% auto;
+	padding:50px;
+	text-align: center;
+	line-height: 25px;
+}
+.navbar{
+	min-height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	border-bottom:solid 3px gray;
+	box-shadow: 2px 2px 35px 2px #8a8a1d;
+	padding:12px 28px;	
+	font-size: large;
+	align-items: center;
+	position:fixed;
+	font-weight: 700;
+	letter-spacing: 3px;
+	
+}
+.navbar .menu{
+	display: flex;
+}
+.navbar i{
+	color:#8a8a1d;
+}
+.navbar .menu,.navbar .login-menu{
+	display: flex;
+}
+.navbar ul{
+	
+	list-style: none;
+	
+}
+.navbar .menu a,.navbar .login-menu li{
+	margin-right: 20px;
+	text-decoration: none;
+	color: rgb(75,75,44);
+	
+	
+}
+#ImageBook{
+	
+	height:50px;
+	width:50px;
+}
